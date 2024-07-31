@@ -2,6 +2,8 @@ from pyannote.audio import Pipeline
 import time
 import os
 
+# Change the model from pyannote/speaker-diarization-3.0 to pyannote/speaker-diarization-3.1 for the latest version
+
 pipeline = Pipeline.from_pretrained(
     "pyannote/speaker-diarization-3.0",
     use_auth_token=os.environ.get("API_TOKEN"),
